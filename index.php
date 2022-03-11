@@ -6,8 +6,8 @@ use App\CaVaHelloDecorator;
 
 $hello = new Hello(); 
 
-$hello = new BirthdayHelloDecorator($hello); 
-echo $hello->sayHello('Marc'); // Bonjour Marc. Joyeux anniversaire !'
+$helloBirthday = new BirthdayHelloDecorator($hello); 
+echo $helloBirthday->sayHello('Marc'); // Bonjour Marc. Joyeux anniversaire !'
 
-$hello = new CaVaHelloDecorator($hello); 
-echo $hello->sayHello('Marc'); // Bonjour Marc. Joyeux anniversaire ! Comment ça va ?' 
+$helloCava = new CaVaHelloDecorator($hello); 
+echo $helloCava->sayHello('Marc'); // Bonjour Marc. Joyeux anniversaire ! Comment ça va ?' 
